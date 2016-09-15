@@ -304,7 +304,7 @@ class snmp (
   $openmanage_enable       = $snmp::params::openmanage_enable,
   $proxy                   = $snmp::params::proxy,
   $rwusers                 = $snmp::params::rwusers,
-  $master                  = "agentx",
+  $rwusers                 = $snmp::params::master,
 ) inherits snmp::params {
   # Validate our booleans
   validate_bool($manage_client)
